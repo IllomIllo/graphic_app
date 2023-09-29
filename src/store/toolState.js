@@ -10,9 +10,6 @@ class ToolState {
         this.tool = tool;
     }
 
-    setTool(tool) {
-        this.tool = tool;
-    }
     setFillColor(color) {
         this.tool.fillColor = color;
     }
@@ -21,6 +18,9 @@ class ToolState {
     }
     setLineWidth(width) {
         this.tool.lineWidth = width;
+    }
+    setStrokeDash(example){
+        this.tool.strokeDash = example
     }
 };
 

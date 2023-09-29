@@ -11,7 +11,7 @@ import toolState from "../store/toolState";
 import LineBrasenhem from "../tools/LineBrasenhem";
 import CircleBrasenhem from "../tools/CircleBrasenhem";
 
-const Toolbar = () => {
+const Toolbar1_4 = () => {
 
     const changeColor = e => {
         toolState.setFillColor(e.target.value)
@@ -34,4 +34,4 @@ const Toolbar = () => {
     );
 };
 
-export default Toolbar;
+export default Toolbar1_4;

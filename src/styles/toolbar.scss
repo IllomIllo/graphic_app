@@ -7,8 +7,9 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  box-shadow: 0 4px 5px gray;
+  box-shadow: 0 1px 1px gray;
   z-index: 999;
+  top: $navbar-height;
 
   &__btn {
     height: 25px;
@@ -61,5 +62,17 @@
   position: absolute;
   width: 100%;
   box-shadow: 0 4px 5px gray;
-  top: $toolbar-height;
+  top: $toolbar-height*2;
+}
+
+.navbar {
+  height: $toolbar-height;
+  background-color: $background-color-navbar;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  z-index: 1000;
+
 }

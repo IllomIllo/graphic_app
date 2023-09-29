@@ -9,6 +9,6 @@ class CanvasState {
     setCanvas(canvas) {
         this.canvas = canvas;
     }
-};
+}
 
 export default new CanvasState();

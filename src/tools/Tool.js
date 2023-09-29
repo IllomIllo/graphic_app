@@ -3,7 +3,6 @@ export default class Tool {
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d')
         this.destroyEvents()
-        this.ctx.setLineDash([2,4]); //f для задания шаблона строки (например, штриховой, пунктирной)
     }
 
     set fillColor(color) {
@@ -14,6 +13,18 @@ export default class Tool {
     }
     set lineWidth(width) {
         this.ctx.lineWidth = width
+    }
+
+   set strokeDash(example){
+        this.ctx.setLineDash(example.split(',')); //f для задания шаблона строки (например, штриховой, пунктирной)
+    }
+
+    set Coordinates([x,y]){
+        this.ctx.setCoordinates(x, y)
+    }
+
+    set N(n){
+        this.ctx.n = n
     }
 
     destroyEvents(){

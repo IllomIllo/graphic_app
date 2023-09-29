@@ -58,11 +58,11 @@ export default class CircleBrasenhem extends Tool {
 
     putPixel =  (x, y) => {//Метод для установки цвета пиксела
         let p= this.ctx.createImageData(1,1);
-        let index = (y * p.width + x) * 4;
-        p.data[0] = 188;
-        p.data[1] = 199;
-        p.data[2] = 120;
-        p.data[3] = 179;
+        //let index = (y * p.width + x) * 4;
+        p.data[0] = 170;
+        p.data[1] = 120;
+        p.data[2] = 130;
+        p.data[3] = 170;
         this.ctx.putImageData(p,x,y);
     }
 

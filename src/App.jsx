@@ -1,14 +1,20 @@
 import "./styles/app.scss"
-import Toolbar from "./components/Toolbar";
-import SettingBar from "./components/SettingBar";
-import Canvas from "./components/Canvas";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import About from "./pages/About";
+import Labs1_4 from "./pages/Labs1_4";
+import Navbar from "./components/Navbar";
+import Labs5 from "./pages/Labs5_";
+
 function App() {
   return (
-    <div className="app">
-      <Toolbar/>
-      <SettingBar/>
-      <Canvas/>
-    </div>
+      <BrowserRouter>
+          <Navbar/>
+        <Routes>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/paint/1-4" element={<Labs1_4/>}/>
+            <Route path="/paint/5" element={<Labs5/>}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 
